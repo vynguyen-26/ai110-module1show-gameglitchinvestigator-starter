@@ -5,8 +5,16 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+When I first ran the game with everything hidden, I thought it was working fine because I couldn't see the hints, or because the developer bug info was also hidden.
+
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+ 1/ Wrong hint bound (range) for input when comparing with the secret key. 
+ 2/ No consistency for score logic, sometimes incorrect input gets +5
+ 3/ Out of range input was accepted
+ 4/ Score in message output is different from the score inside Developer Debug info
+ 5/ Cannot play new game after lost or win the game. Has to reload the page
+ 6/ Score for new game is the same as the previous round if the page is not reload
 
 **Bug Reproduction Log**
 
@@ -14,9 +22,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+|   1   |     Go Higher     |   Go Lower      |      Go Lower
+|   5   |     Go Higher     |   Go Lower      |      Go Lower 
+|  104  |   Not accepted    |   Accepted      |      Go Higher
 
 ---
 
@@ -45,7 +53,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 ## 5. Looking ahead: your developer habits
 
-- What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
+- What is one habit or strategy from this project that you want to reuse in future labs or projects? 
+- This could be a testing habit, a prompting strategy, or a way you used Git.
+Analyze the problem carefully and revisit the website multiple times to test and ensure no bugs were overlooked.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.

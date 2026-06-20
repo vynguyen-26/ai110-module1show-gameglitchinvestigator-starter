@@ -26,7 +26,20 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+The purpose of the game is to allow players to guess a number between 1 and 100 across 3 different levels: easy, normal, and hard.
+
 - [ ] Detail which bugs you found.
+ 1/ Wrong hint bound (range) for input when comparing with the secret key 
+ 2/ No consistency for score logic, sometimes incorrect input gets +5
+ 3/ Out of range input was accepted
+ 4/ Score in message output is different from the score inside Developer Debug info
+ 5/ Cannot play new game after lost or win the game. Has to reload the page
+ 6/ Score for new game is the same as the previous round if the page is not reload
+ 7/ Normal level has more attempts than easy and a larger range than hard
+ 8/ History list of the previous is not clear for the next new game
+ 9/ Input must be submitted twice to appear in the history list; therefore, the score will only be added or subtracted when the input is added to the history, resulting in the wrong score being calculated
+ 10/ A new game on the same page, without a reload, will start with the final score of the previous game and will be marked as 1 attempt, even though there is no input yet, since the old history list is not clear. 
+
 - [ ] Explain what fixes you applied.
 
 ## 📸 Demo Walkthrough
