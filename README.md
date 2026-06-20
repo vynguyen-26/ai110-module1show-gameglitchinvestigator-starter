@@ -41,18 +41,27 @@ The purpose of the game is to allow players to guess a number between 1 and 100 
  10/ A new game on the same page, without a reload, will start with the final score of the previous game and will be marked as 1 attempt, even though there is no input yet, since the old history list is not clear. 
 
 - [ ] Explain what fixes you applied.
+1. Fix the hint suggestion system, so it matched user input to the secret key correctly
+2. Fix the calculation score every wrong guess costs a flat -5, the win bonus is 100 - 10*(attempt_number - 1) (first-guess win = 100)
+3. New Game now resets score/status/history and different secret key 
+4. The range of difficulty levels and the number of attempts for each level 
+5. The input is recorded in the history list after 1 click (previously 2), and it needs to stay within the level's difficulty range
+6. The secret key also changes if the user selects a different level
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. Pick a level of difficulty of your choice
+2. Enter a guess number within the range of the level you choose
+3. Click or unclick the show hint, depending on how challenging you like. If you choose the show hint option, then follow the hint to guide you in the right direction
+4. Each of your answers will be recorded in the hidden history list, which will then calculate your final score
+5. There are different numbers of attempts
+6. If you win/lose, there will be a message to tell you
+7. You can replay a game by clicking on New Game or changing the level of difficulty
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
+![Fixed winning game screenshot](Screenshot%202026-06-20%20at%204.44.53%E2%80%AFPM.png)
 
 ## 🧪 Test Results
 

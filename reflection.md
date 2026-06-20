@@ -31,24 +31,29 @@ Document at least 3 bugs you found. Add rows as needed.
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+Claude Code
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+The score calculation system
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+The out of range input given TypeError: parse_guess() takes 1 positional argument but 3 were given
 
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
+When it is critical and affects the product's outcome, it is wrong to deviate from the product's purpose.
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+The range of difficulty levels and the number of attempts for each level
 - Did AI help you design or understand any tests? How?
-
+Yes, the AI helps me design test cases for the new game by analyzing all the fixed bugs and generating them based on the new fixes.
 ---
 
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
-
+Streamlit reruns the entire app from the beginning every time you click or type. Session state is like a little notebook that helps Streamlit remember important things, like your score, choices, or previous answers, even after the app starts over.
 ---
 
 ## 5. Looking ahead: your developer habits
@@ -58,4 +63,7 @@ Document at least 3 bugs you found. Add rows as needed.
 Analyze the problem carefully and revisit the website multiple times to test and ensure no bugs were overlooked.
 
 - What is one thing you would do differently next time you work with AI on a coding task?
+Next time, I would fix one bug at a time with a clear description of the problem and the fix details
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+This project has taught me that I should fix one bug at a time. Also, I must describe the problem clearly and tell the AI specifically what to fix, with specific details, so it can go in the right direction.
