@@ -38,11 +38,11 @@ Claude Code
 
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 
-The score calculation system
+For the score calculation system, I AI suggested "A simple, predictable model: start at 0, every wrong guess costs the same (−5 regardless of direction), and a win awards 100 − 10 × (guesses − 1) with a floor of 10 (so a first-guess win = 100, second guess = 90, etc.). And make New Game truly reset everything." I verified the result my actually playing the game to tested and write the test cases.
 
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
-The out of range input given TypeError: parse_guess() takes 1 positional argument but 3 were given
+The out of range input given TypeError: parse_guess() takes 1 positional argument but 3 were given. For that problem it sugessted that I should reload the app because Streamlit reloaded app.py (the new 3-arg call) but kept the old cached logic_utils module (the original 1-arg parse_guess). I did reload the app, and it still didn't work, so I asked it again, and I had to stop the running server and then rerun streamlit run app.py 
 
 ---
 
