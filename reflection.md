@@ -57,14 +57,12 @@ When it is critical and affects the product's outcome, it is wrong to deviate fr
 The range of difficulty levels and the number of attempts for each level
 
 - Did AI help you design or understand any tests? How?
-
 Yes, the AI helps me design test cases for the new game by analyzing all the fixed bugs and generating them based on the new fixes.
 ---
 
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
-
 Streamlit reruns the entire app from the beginning every time you click or type. Session state is like a little notebook that helps Streamlit remember important things, like your score, choices, or previous answers, even after the app starts over.
 ---
 
